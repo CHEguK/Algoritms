@@ -214,6 +214,34 @@ while states_needed:
 final_stations
 
 
+# Сортировка пузырьком
+def bubble_sort(nums):
+    swapped = True
+    while swapped:
+        swapped = False
+        for i in range(len(nums) - 1):
+            if nums[i] > nums[i+1]:
+                print(nums[i])
+                nums[i], nums[i+1] = nums[i+1], nums[i]
+                
+                swapped = True
+nums = [100, 39, 1000, 28, 65]
+bubble_sort(nums)
+print(nums)
+
+
+# Последовательность Фиабоначчи с Мемоизацией
+cashe = {0: 0, 1: 1}
+def fibonacci(n):
+    if n in cashe:
+        return cashe[n]
+    else:
+        f = fibonacci(n-1) + fibonacci(n-2)
+        cashe[n] = f
+        return f
+fibonacci(50)
+
+
 
 
 
