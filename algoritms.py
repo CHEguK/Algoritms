@@ -19,7 +19,7 @@ def binary_search(arr, item):
 binary_search([1, 3, 6, 7, 15, 41, 50, 55, 100], 50)
 
 
-# Поиск минимума
+# Поиск минимума 
 def find_Smallest(arr):
     smallest = arr[0]
     id_smallest = 0
