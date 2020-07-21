@@ -73,7 +73,7 @@ def find_maximum(x):
 find_maximum([5, 1, 4, 4, 2, 1, 3, 6])
 
 
-# Быстрая сортировка (рекурсия)
+# Быстрая сортировка (рекурсия) 
 def quicksort(array):
     if len(array) < 2:
         return array
